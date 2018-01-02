@@ -40,9 +40,9 @@ int main() {
 	int i;
 	//int fg = 0;
 
-									//signal handler to ignore SIGINT
+											//signal handler to ignore SIGINT
 	struct sigaction act;
-	act.sa_handler = SIG_IGN; 					//set to ignore
+	act.sa_handler = SIG_IGN; 				//set to ignore
 	sigaction(SIGINT, &act, NULL);
 	
 	/*struct sigaction catchZ = {0};
@@ -121,7 +121,7 @@ int main() {
 				fflush(stdout);
 
 			}
-			else { 								//else print terminating signal
+			else { 							//else print terminating signal
 				printf("Terminating signal %d\n", status);
 				fflush(stdout);
 
